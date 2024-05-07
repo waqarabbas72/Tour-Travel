@@ -14,23 +14,23 @@ const Hero = () => {
           </h1>
           <div className="mt-8">
             <ul className="flex justify-between gap-6 text-xl">
-              <li className="cursor-pointer flex items-center gap-2">
+              <li className="cursor-pointer flex items-center gap-2 text-gray-600 font-medium">
                 <GoHome />
                 Search All
               </li>
-              <li className="cursor-pointer flex items-center gap-2">
+              <li className="cursor-pointer flex items-center gap-2 text-gray-600 font-medium">
                 <FaBed />
                 Hotels
               </li>
-              <li className="cursor-pointer flex items-center gap-2">
+              <li className="cursor-pointer flex items-center gap-2 text-gray-600 font-medium">
                 <GoTasklist />
                 Things to Do
               </li>
-              <li className="cursor-pointer flex items-center gap-2">
+              <li className="cursor-pointer flex items-center gap-2 text-gray-600 font-medium">
                 <MdDinnerDining />
                 Restaurants
               </li>
-              <li className="cursor-pointer flex items-center gap-2">
+              <li className="cursor-pointer flex items-center gap-2 text-gray-600 font-medium">
                 <MdKey />
                 Vacation Rentals
               </li>
