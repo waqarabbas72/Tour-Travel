@@ -3,8 +3,14 @@ import { GoHome, GoTasklist } from "react-icons/go";
 import { MdDinnerDining, MdKey } from "react-icons/md";
 import { FaBed } from "react-icons/fa";
 import SearchBar from "./SearchBar";
+import useFetch from "../hooks/useFetch";
 
 const Hero = () => {
+  const [data] = useFetch(
+    `https://booking-com.p.rapidapi.com/v1/hotels/reviews`
+  );
+  console.log("data", data);
+
   return (
     <div className="bg-gray-100">
       <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
