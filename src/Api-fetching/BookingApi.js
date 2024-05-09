@@ -4,11 +4,11 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const bookingApi = createApi({
   reducerPath: "bookingApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://fakestoreapi.com",
+    baseUrl: "test.api.amadeus.com/v2",
   }),
   endpoints: (builder) => ({
     getHotelsDetail: builder.query({
-      query: () => `/products`,
+      query: () => `/booking/hotel-orders`,
     }),
   }),
 });
