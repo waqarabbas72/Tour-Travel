@@ -4,13 +4,18 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const bookingApi = createApi({
   reducerPath: "bookingApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "test.api.amadeus.com/v2",
+    baseUrl: "https://all-in-one-recipe-api.p.rapidapi.com",
+    headers: {
+      'X-RapidAPI-Key': 'a81d2279e5mshe3dd6222ed7d694p1014e3jsncd78d3c6024b',
+      'X-RapidAPI-Host': 'all-in-one-recipe-api.p.rapidapi.com'
+    }
   }),
   endpoints: (builder) => ({
-    getHotelsDetail: builder.query({
-      query: () => `/booking/hotel-orders`,
+    fetchCuisines: builder.query({
+      query: () => `/categories/chicken`,
     }),
   }),
 });
 
-export const { useGetHotelsDetailQuery } = bookingApi;
+// Export hooks for usage in functional components, including useDispatch and useSelector
+export const { useFetchCuisinesQuery } = bookingApi;

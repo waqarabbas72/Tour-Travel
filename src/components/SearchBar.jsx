@@ -2,12 +2,6 @@ import React, { useEffect } from "react";
 import { FaSearch } from "react-icons/fa";
 
 const SearchBar = () => {
-
-  useEffect(() => {
-        fetch(`test.api.amadeus.com/v2/booking/hotel-orders`)
-          .then((res) => res.json())
-          .then((data) => console.log('data' ,data));
-           }, []);
   return (
     <div className="w-11/12 sm:w-2/3">
       <form action="" className="relative flex items-center justify-between">

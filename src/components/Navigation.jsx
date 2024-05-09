@@ -5,12 +5,12 @@ function Index() {
   const [show, setShow] = useState(false);
   return (
     <div
-      className="bg-gray-100"
+      className="bg-gray-100 fixed w-full z-10 shadow-xl" 
     >
       {/* Code block starts */}
       <dh-component>
         <nav className="w-full border-b">
-          <div className="py-5 md:py-0 container mx-auto px-6 flex items-center justify-between">
+          <div className="py-3 md:py-0 container mx-auto px-6 flex items-center justify-between">
             <div aria-label="Home. logo" role="img">
               <img
                 className="w-12 md:w-auto"
@@ -68,7 +68,7 @@ function Index() {
                     <line x1={6} y1={6} x2={18} y2={18} />
                   </svg>
                 </button>
-                <ul className="flex text-3xl md:text-base items-center py-10 md:flex flex-col md:flex-row justify-center fixed md:relative top-0 bottom-0 left-0 right-0 bg-white md:bg-transparent z-20">
+                <ul className="flex text-3xl md:text-base items-center py-6 md:flex flex-col md:flex-row justify-center fixed md:relative top-0 bottom-0 left-0 right-0 bg-white md:bg-transparent z-20">
                   <li className="text-gray-700 hover:bg-gray-200 rounded-full px-2 cursor-pointer text-base lg:text-lg">
                     <a href="#">Discover</a>
                   </li>
